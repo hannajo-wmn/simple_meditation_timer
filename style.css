@@ -1,0 +1,45 @@
+* {
+    font-family: "Courier New";
+}
+    
+body {
+    /* CSS HEX */
+--viridian: #558b6eff;
+--morning-blue: #88a09eff;
+--eggplant: #704c5eff;
+--english-lavender: #b88c9eff;
+--orchid-pink: #f1c8dbff;
+
+    margin: 4rem;
+    background-color: white;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+ .right {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 5rem;
+}
+
+.margin-top {
+    margin-top: 2rem;
+}
+
+.timer {
+    font-size: 3rem;
+    color: black;
+}
+
+#clock {
+    width: 10rem;
+    margin-top: 3rem;
+}
+
+#menu {
+    width: 100%;
+}
