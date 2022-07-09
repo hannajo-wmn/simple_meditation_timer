@@ -1,6 +1,6 @@
 function timer() {
-    let startTime = Date.now();
-    let fiveMinutes = 1000 * 60 * 5;
+    let startTime = Date.now(); //Die Methode Date.now() ermittelt die Anzahl der Millisekunden, die seit dem 01.01.1970 00:00:00 UTC vergangen sind.
+    let fiveMinutes = 1000 * 60 * 1; // Zeit, die der Timer laufen soll
     let endTime = startTime + fiveMinutes;
 
     let interval = setInterval(function() {
@@ -8,10 +8,15 @@ function timer() {
        let timeLeft = endTime - Date.now();
        let minutes = Math.floor(timeLeft / (1000 * 60));
        let seconds = Math.floor((timeLeft/1000) % 60);
+       if ((minutes === 0) && (seconds === 0)) {
+        clearInterval(interval)
+       }
        let text = '0' + minutes + ':' + seconds;
        document.getElementById("timer").innerHTML = text;
-    }, 1000);
+    }, 1000); // setInterval(myTimer, 1000); ruft eine Funktion jede Sekunde auf
   }
+
+
 
 
 
