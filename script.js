@@ -1,6 +1,7 @@
 let interval = null; // stores if timer ist running
 let lastRemainingTime = null; // stores last remainig time when timer is paused
 let endTime; 
+const bell = new Audio("sound/bell.wav");
 
 let inputElement = document.getElementById("userInput") //user input html element
 let timeElement = document.getElementById("timer") //timer div
@@ -13,6 +14,8 @@ function timer() {
         interval = null; //store that timer is not running anymore
         return // stop here
     }
+
+    bell.play();
 
     // convert user input (given in minutes:seconds) to milliseconds (requestedMilliseconds)
     let requestedMilliseconds;
@@ -40,6 +43,7 @@ function timer() {
         minutes = 0;
         seconds = 0;
         clearInterval(interval)
+        bell.play();
        }
        let text = String(minutes).padStart(2, "0") + ":" + String(seconds).padStart(2, "0");
        document.getElementById("timer").innerHTML = text;
@@ -71,7 +75,7 @@ function clearTimer() {
     lastRemainingTime = null;
 }
 
-// show formated user input in timeElement
+// add event listener to inputElement, show formated user input in timeElement
 inputElement.addEventListener("input", () => {
     timeElement.innerHTML = formatInputValue();
 });
@@ -79,3 +83,6 @@ inputElement.addEventListener("input", () => {
 document.getElementById("start").addEventListener("click", timer);
 document.getElementById("clear").addEventListener("click", clearTimer);
 
+document.getElementById("timer").addEventListener("click", () => {
+    inputElement.focus();
+  });

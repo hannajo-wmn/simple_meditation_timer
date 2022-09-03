@@ -9,10 +9,32 @@ body {
 --eggplant: #704c5eff;
 --english-lavender: #b88c9eff;
 --orchid-pink: #f1c8dbff;
+--eigengrau: #16161d;
 
     margin: 4rem;
     background-color: white;
+    color: var(--eigengrau);
 }
+
+button {
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    color: var(--eigengrau);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+/*
+  button:hover {
+    background-color: var(--eggplant);
+  }
+*/
 
 .center {
     display: flex;
@@ -32,7 +54,7 @@ body {
 
 .timer {
     font-size: 3rem;
-    color: black;
+    /* color: black; */
 }
 
 #clock {
@@ -42,4 +64,10 @@ body {
 
 #menu {
     width: 100%;
+}
+
+#inputDiv {
+    height: 0px;
+    border: 0px;
+    opacity: 0;
 }

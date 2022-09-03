@@ -5,19 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Meditationstimer</title>
 </head>
 <body>
     <!-- <div class="right"><img id="menu" src="img/menu.png"></div> -->
-    <div class="center margin-top"><img id="clock" src="img/clock.png"></div>
-    <div class="center margin-top">
-        <input id="userInput" type="number" value = "0" max="9999" />
+    <div class="center margin-top"><img id="clock" src="img/clock2.png"></div>
+    <div class="center margin-top" id="inputDiv">
+        <input id="userInput" type="number" value="" max="9999" />
     </div>
     <div class="center margin-top timer" id="timer">00:00</div>
     <div class="center margin-top">
-        <button id="start">start/pause</button>
-        <button id="clear">clear</button>
+        <button id="start"><i class="fa-solid fa-hourglass-start"></i></button>
+        <button id="clear"><i class="fa-solid fa-arrow-rotate-left"></i></button>
     </div>
 </body>
 <script src="script.js"></script>
 </html>
+
