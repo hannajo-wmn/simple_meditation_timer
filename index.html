@@ -8,10 +8,16 @@
     <title>Meditationstimer</title>
 </head>
 <body>
-    <div class="right"><img id="menu" src="img/menu.png"></div>
+    <!-- <div class="right"><img id="menu" src="img/menu.png"></div> -->
     <div class="center margin-top"><img id="clock" src="img/clock.png"></div>
-    <div class="center margin-top timer" id="timer">05:00</div>
-    <div class="center margin-top"><button id="start">start</button></div>
+    <div class="center margin-top">
+        <input id="userInput" type="number" value = "0" max="9999" />
+    </div>
+    <div class="center margin-top timer" id="timer">00:00</div>
+    <div class="center margin-top">
+        <button id="start">start/pause</button>
+        <button id="clear">clear</button>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
