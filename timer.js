@@ -4,7 +4,7 @@ export class Timer {
         this.interval = null; // stores if timer is running
         this.lastRemainingTime = null; // stores last remainig time when timer is paused
         this.endTime; 
-        this.bell = new Audio("/bell.wav");
+        this.bell = new Audio("sound/bell.wav");
         this.timeUpdateCallback = null;
 
     }
