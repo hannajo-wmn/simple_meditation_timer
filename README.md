@@ -10,11 +10,14 @@ This is a simple meditation timer.
 
 ## How to run locally (Linux)
 To run this program locally, you have to install parcel in the projects directory:
-`npm install parcel`  
-`npx parcel index.html`  
+`npm install parcel`
+
+`npx parcel index.html`
+
         
 Server probably running at http://localhost:1234
 
 Illustrations by Irasutoya.
 https://www.irasutoya.com/2012/12/blog-post_9802.html
+
 💐 どうもありがとうございます。
