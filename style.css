@@ -1,5 +1,6 @@
 * {
-    font-family: "Courier New";
+    font-family: 'Open Sans', sans-serif;
+
 }
     
 body {
@@ -11,16 +12,16 @@ body {
 --orchid-pink: #f1c8dbff;
 --eigengrau: #16161d;
 
-    margin: 4rem;
     background-color: white;
     color: var(--eigengrau);
+    margin: 0px;
 }
 
 button {
     background-color: white;
     border: none;
     border-radius: 30px;
-    color: var(--eigengrau);
+    color: black;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -28,46 +29,17 @@ button {
     font-size: 20px;
     margin: 4px 2px;
     cursor: pointer;
+    /* -webkit-tap-highlight-color: transparent; */
   }
 
-/*
-  button:hover {
-    background-color: var(--eggplant);
-  }
-*/
-
-.center {
+.container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-}
-
- .right {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    width: 5rem;
-}
-
-.margin-top {
-    margin-top: 2rem;
-}
-
-.timer {
+    align-items: center;
+    height: 100vh;
     font-size: 3rem;
-    /* color: black; */
 }
 
-#clock {
-    width: 10rem;
-    margin-top: 3rem;
-}
 
-#menu {
-    width: 100%;
-}
 
-#inputDiv {
-    height: 0px;
-    border: 0px;
-    opacity: 0;
-}

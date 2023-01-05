@@ -2,24 +2,26 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="img/favicon_io/android-chrome-192x192.png" sizes="any">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Meditationstimer</title>
 </head>
 <body>
-    <!-- <div class="right"><img id="menu" src="img/menu.png"></div> -->
-    <div class="center margin-top"><img id="clock" src="img/clock2.png"></div>
-    <div class="center margin-top" id="inputDiv">
-        <input id="userInput" type="number" value="" max="9999" />
-    </div>
-    <div class="center margin-top timer" id="timer">00:00</div>
-    <div class="center margin-top">
-        <button id="start"><i class="fa-solid fa-hourglass-start"></i></button>
-        <button id="clear"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+    <div class="container">
+        <img id="girl" src="img/meditating_girl_2.png">
+        <custom-input id="custom-input"></custom-input>
+        <div>
+            <button id="start"><i class="fa-solid fa-hourglass-start"></i></button>
+            <button id="clear"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+        </div>
     </div>
 </body>
-<script src="script.js"></script>
+<script src="script.js" type="module"></script>
 </html>
 
